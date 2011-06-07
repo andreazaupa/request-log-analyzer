@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::Filter
 
   # Filter to select or reject a specific field

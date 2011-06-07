@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::Tracker
 
   # Catagorize requests by frequency.

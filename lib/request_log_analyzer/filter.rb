@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::Filter
 
   # Base filter class used to filter input requests.

@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::FileFormat
 
   # The DelayedJob2 file format parsed log files that are created by DelayedJob 2.0.

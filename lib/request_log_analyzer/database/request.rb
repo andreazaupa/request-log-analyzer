@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 class RequestLogAnalyzer::Database::Request < RequestLogAnalyzer::Database::Base
 
   # Returns an array of all the Line objects of this request in the correct order.

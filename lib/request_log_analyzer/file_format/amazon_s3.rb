@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::FileFormat
 
   # FileFormat for Amazon S3 access logs.

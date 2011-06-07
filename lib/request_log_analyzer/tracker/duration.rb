@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::Tracker
 
   # Analyze the duration of a specific attribute

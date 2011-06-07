@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 # Setup the include path
 $:.unshift(File.expand_path('..', File.dirname(__FILE__))
 

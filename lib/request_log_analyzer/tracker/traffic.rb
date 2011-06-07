@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::Tracker
 
   # Analyze the average and total traffic of requests

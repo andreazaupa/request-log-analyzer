@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 class RequestLogAnalyzer::Database::Source < RequestLogAnalyzer::Database::Base
 
   def self.create_table!

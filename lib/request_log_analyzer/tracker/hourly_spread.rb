@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::Tracker
 
   # Determines the average hourly spread of the parsed requests.

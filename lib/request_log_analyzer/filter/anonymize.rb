@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::Filter
 
   # Filter to anonymize parsed values

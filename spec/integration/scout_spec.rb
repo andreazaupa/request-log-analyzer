@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 require 'spec_helper'
 
 def capture_stdout_and_stderr_with_warnings_on

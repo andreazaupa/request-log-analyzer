@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::FileFormat
 
   # Default FileFormat class for Rails logs.

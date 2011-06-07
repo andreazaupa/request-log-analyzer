@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::FileFormat
 
   # The Apache file format is able to log Apache access.log files.

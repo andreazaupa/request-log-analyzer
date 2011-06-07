@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::Output
 
   # HTML Output class. Generated a HTML-formatted report, including CSS.

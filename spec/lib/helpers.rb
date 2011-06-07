@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::RSpec::Helpers
 
   # Create or return a new TestingFormat

@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer
 
   # Mail report to a specified emailaddress

@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::FileFormat
 
   # The Merb file format parses the request header with the timestamp, the params line

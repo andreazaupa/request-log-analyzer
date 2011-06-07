@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer
 
   # The line definition class is used to specify what lines should be parsed from the log file.

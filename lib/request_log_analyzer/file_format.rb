@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::FileFormat
 
   autoload :Rails,            'request_log_analyzer/file_format/rails'

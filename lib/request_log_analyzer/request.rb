@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer
 
   # The Request class represents a parsed request from the log file.

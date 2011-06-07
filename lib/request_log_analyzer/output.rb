@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 # Module for generating output
 module RequestLogAnalyzer::Output
 

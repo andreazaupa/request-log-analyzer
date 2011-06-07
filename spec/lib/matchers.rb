@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::RSpec::Matchers
 
   class HasLineDefinition

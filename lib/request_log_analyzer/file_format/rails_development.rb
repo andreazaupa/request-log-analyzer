@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::FileFormat
 
   # The RailsDevelopment FileFormat is an extention to the default Rails file format. It includes

@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 class RequestLogAnalyzer::Database::Base < ActiveRecord::Base
 
   self.abstract_class = true

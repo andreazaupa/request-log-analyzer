@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 require 'date'
 
 # Satisfy ruby 1.9 sensitivity about encoding.

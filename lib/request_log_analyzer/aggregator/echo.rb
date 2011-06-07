@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::Aggregator
 
   # Echo Aggregator. Writes everything to the screen when it is passed to this aggregator
@@ -5,12 +7,13 @@ module RequestLogAnalyzer::Aggregator
 
     attr_accessor :warnings
 
-    def prepare
+def prepare(additional_options={})
       @warnings = []
     end
 
     # Display every parsed line immediately to the terminal
     def aggregate(request)
+      puts "HEI" + Report.first.id.to_s
       puts "\nRequest: \n" + request.lines.map { |l| 
         "\t#{l[:lineno]}:#{l[:line_type]}: #{l.reject { |(k,v)| [:lineno, :line_type].include?(k) }.inspect}" }.join("\n")
     end

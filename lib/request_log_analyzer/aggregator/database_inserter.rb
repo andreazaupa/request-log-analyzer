@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::Aggregator
 
   # The database aggregator will create an SQLite3 database with all parsed request information.
@@ -17,7 +19,7 @@ module RequestLogAnalyzer::Aggregator
 
     # Establishes a connection to the database and creates the necessary database schema for the
     # current file format
-    def prepare
+   def prepare(additional_options={})
       require 'request_log_analyzer/database'
       
       @sources = {}

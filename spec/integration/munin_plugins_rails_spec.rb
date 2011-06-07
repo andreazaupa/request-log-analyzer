@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 require 'spec_helper'
 
 describe RequestLogAnalyzer, 'when harvesting like munin-plugins-rails the YAML output' do

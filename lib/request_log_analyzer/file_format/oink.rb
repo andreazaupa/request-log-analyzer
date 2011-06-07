@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 class RequestLogAnalyzer::FileFormat::Oink < RequestLogAnalyzer::FileFormat::Rails
   # capture the PID
   HODEL3000_PROCESSING = /\[(\d+)\]: Processing ((?:\w+::)*\w+)#(\w+)(?: to (\w+))? \(for (#{ip_address}) at (#{timestamp('%Y-%m-%d %H:%M:%S')})\) \[([A-Z]+)\]/

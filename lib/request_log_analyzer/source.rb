@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 # The RequestLogAnalyzer::Source module contains all functionality that loads requests from a given source
 # and feed them to the pipeline for further processing. The requests (see RequestLogAnalyzer::Request) that
 # will be parsed from a source, will be piped throug filters (see RequestLogAnalyzer::Filter) and are then

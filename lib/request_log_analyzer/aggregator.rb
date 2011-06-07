@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::Aggregator
 
   # The base class of an aggregator. This class provides the interface to which
@@ -11,11 +13,12 @@ module RequestLogAnalyzer::Aggregator
     def initialize(source, options = {})
       @source = source
       @options = options
+
     end
 
     # The prepare function is called just before parsing starts. This function
     # can be used to initialie variables, etc.
-    def prepare
+    def prepare(additional_options={})
     end
 
     # The aggregate function is called for every request.
@@ -47,3 +50,4 @@ end
 require 'request_log_analyzer/aggregator/echo'
 require 'request_log_analyzer/aggregator/summarizer'
 require 'request_log_analyzer/aggregator/database_inserter'
+require 'request_log_analyzer/aggregator/develon_aggregator'

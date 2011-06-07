@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::Tracker
 
   # Determines the datetime of the first request and the last request

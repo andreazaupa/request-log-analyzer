@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 require 'spec_helper'
 
 describe RequestLogAnalyzer::Filter::Timespan, 'both before and after'  do

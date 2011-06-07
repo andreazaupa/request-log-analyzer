@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 # Try to determine the terminal with.
 # If it is not possible to to so, it returns the default_width.
 # <tt>default_width</tt> Defaults to 81

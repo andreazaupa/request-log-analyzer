@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module CommandLine
 
   class Option

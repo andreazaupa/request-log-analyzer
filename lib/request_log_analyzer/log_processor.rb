@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer
 
   # The Logprocessor class is used to perform simple processing actions over log files.

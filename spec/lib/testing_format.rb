@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 # Simple log file specification, used to test log parser.
 class TestingFormat < RequestLogAnalyzer::FileFormat::Base
 

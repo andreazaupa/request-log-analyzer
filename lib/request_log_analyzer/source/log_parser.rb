@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::Source
 
   # The LogParser class reads log data from a given source and uses a file format definition

@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::Filter
 
   # Reject all requests not in given timespan

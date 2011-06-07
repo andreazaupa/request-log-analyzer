@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module RequestLogAnalyzer::Aggregator
 
   class Summarizer < Base
@@ -53,7 +55,7 @@ module RequestLogAnalyzer::Aggregator
     end
 
     # Call prepare on all trackers.
-    def prepare
+def prepare(additional_options={})
       raise "No trackers set up in Summarizer!" if @trackers.nil? || @trackers.empty?
       @trackers.each { |tracker| tracker.prepare }
     end
@@ -61,6 +63,7 @@ module RequestLogAnalyzer::Aggregator
     # Pass all requests to trackers and let them update if necessary.
     # <tt>request</tt> The request to pass.
     def aggregate(request)
+      puts request.inspect
       @trackers.each do |tracker|
         tracker.update(request) if tracker.should_update?(request)
       end
