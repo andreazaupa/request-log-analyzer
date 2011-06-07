@@ -48,7 +48,7 @@ module RequestLogAnalyzer::Aggregator
       else
          @cached_entry[norm_timestamp][:traffic]+=byts
          @cached_entry[norm_timestamp][:hit]+=1
-         @cached_entry[norm_timestamp][:rows]+= ",#{rowno}"
+         #@cached_entry[norm_timestamp][:rows]+= ",#{rowno}" #not request
       end
       # l=LogEntry.find_or_initialize_by_aggregator_params(r[:timestamp],@service.id,@log_file.id)
       #     l.traffic+=byts
