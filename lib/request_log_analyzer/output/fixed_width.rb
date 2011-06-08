@@ -119,18 +119,18 @@ module RequestLogAnalyzer::Output
       if io.kind_of?(File)
         puts colorize("Request-log-analyzer summary report", :white, :bold)
         line(:green)
-        puts "Version #{RequestLogAnalyzer::VERSION} - written by Willem van Bergen and Bart ten Brinke"
-        puts "Website: #{link('http://github.com/wvanbergen/request-log-analyzer')}"
+        # puts "Version #{RequestLogAnalyzer::VERSION} - written by Willem van Bergen and Bart ten Brinke"
+        # puts "Website: #{link('http://github.com/wvanbergen/request-log-analyzer')}"
       end
     end
 
     # Generate a footer for a report
     def footer
-      puts
-      puts "Need an expert to analyze your application?"
-      puts "Mail to #{link('contact@railsdoctors.com')} or visit us at #{link('http://railsdoctors.com')}."
-      line(:green)
-      puts "Thanks for using #{colorize('request-log-analyzer', :white, :bold)}!"
+
+      # puts "Need an expert to analyze your application?"
+      #      puts "Mail to #{link('contact@railsdoctors.com')} or visit us at #{link('http://railsdoctors.com')}."
+      #      line(:green)
+      #      puts "Thanks for using #{colorize('request-log-analyzer', :white, :bold)}!"
     end
 
     # Generate a report table and push it into the output object.

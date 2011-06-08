@@ -357,11 +357,11 @@ module RequestLogAnalyzer
 
           if @output.io.kind_of?(File)
             unless @options[:silent]
-              puts
-              puts "Report written to: " + File.expand_path(@output.io.path)
-              puts "Need an expert to analyze your application?"
-              puts "Mail to contact@railsdoctors.com or visit us at http://railsdoctors.com"
-              puts "Thanks for using request-log-analyzer!"
+              # puts
+              #              puts "Report written to: " + File.expand_path(@output.io.path)
+              #              puts "Need an expert to analyze your application?"
+              #              puts "Mail to contact@railsdoctors.com or visit us at http://railsdoctors.com"
+              #              puts "Thanks for using request-log-analyzer!"
             end
             @output.io.close
           elsif @output.io.kind_of?(RequestLogAnalyzer::Mailer)
