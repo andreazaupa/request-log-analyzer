@@ -11,10 +11,12 @@ module RequestLogAnalyzer::Aggregator
       @warnings = []
       #un singolo import riguarda un singolo files e quindi un singolo servizio
       @log_file=LogFile.find additional_options[:log_file_id]#LogFile.find_by_path("/Users/Andrea/Code/develon_log/tmp/log_example/develon.com-access.log.20110401.gz")
+      @log_file.update_attributes("status","reading")
       @service=nil
       @cached_entry={}
       @stime=Time.now
       @prec_timestamp=nil
+      puts "Leggo #{@log_file.path} in #{Time.now-@stime}!!!!!!!!"
       
     end
 
@@ -34,7 +36,6 @@ module RequestLogAnalyzer::Aggregator
       if @cached_entry[norm_timestamp].nil?
          @cached_entry[norm_timestamp]={:traffic=>byts,:rows=>rowno.to_s,:hit=>1}
          unless @prec_timestamp.nil?
-        
            l=LogEntry.new :service_id=> @service.id ,:log_file_id=>@log_file.id,:ref_time=>(Time.parse @prec_timestamp.to_s)
            l.rows=@cached_entry[@prec_timestamp][:rows]
            l.hit=@cached_entry[@prec_timestamp][:hit]
@@ -60,9 +61,9 @@ module RequestLogAnalyzer::Aggregator
 
     # Display every warning in the report when finished parsing
     def report(output)
-      puts "HO FINITO , ho letto  #{@cached_entry.keys.size} VALORI in #{Time.now-@stime}!!!!!!!!"
-      output.title("Warnings during parsing")
-      @warnings.each { |w| output.puts(w) }
+      puts "Ho letto #{@log_file.path} in #{Time.now-@stime}!!!!!!!!"
+      #output.title("Warnings during parsing")
+      # @warnings.each { |w| output.puts(w) }
     end
 
   end
